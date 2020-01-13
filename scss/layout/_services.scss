@@ -1,0 +1,62 @@
+.services {
+  padding-top: 2rem;
+  padding-top: 2rem;
+  position: relative;
+  .myContainer {
+    @include flex($jstfyC: space-between, $wrap: wrap);
+    @include media(1200px) {
+      padding-bottom: 3.8rem;
+    }
+  }
+}
+
+.services__head {
+  color: $fontColor;
+  margin-bottom: 2rem;
+  h2 {
+    margin-bottom: 2rem;
+  }
+  @include media(700px) {
+    @include size($width: 34%);
+    margin-top: 2rem;
+  }
+}
+
+.services__list {
+  @include flex($jstfyC: space-between, $wrap: wrap, $alignI: baseline);
+  @include media(700px) {
+    @include size($width: 60%);
+    margin-top: 4rem;
+  }
+}
+
+.services__list-item {
+  margin-bottom: 2.4rem;
+  > img {
+    margin-bottom: 1.33rem;
+    @include size($mwidth: 2.2rem);
+  }
+  @include media(700px) {
+    @include size($width: 42%);
+  }
+}
+
+.leftlines {
+  position: absolute;
+  top: -152px;
+  left: -8px;
+  height: 14.7rem;
+  width: 3.5rem;
+  @include media(768px){
+    top: -426px;
+    left: -159px;
+    height: 35.7rem;
+    width: 19.5rem;
+  }
+  @include media(1300px) {
+    top: -541px;
+    left: -238px;
+    height: 47.7rem;
+    width: 29.5rem;
+  }
+}

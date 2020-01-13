@@ -1,0 +1,38 @@
+.connect{
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #1A61B7;
+    color: white;
+    line-height: 2rem;
+    h3{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    @include media(1200px){
+        &::after{
+            content: "";
+            position: absolute;
+            display: block;
+            border: 63px solid;
+            z-index: 0;
+            top: 0;
+            right: 0;
+            border-color: white white white #1A61B7;
+            
+        }
+    }
+
+}
+
+.connect-btn{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    @include media(1200px){
+        margin-top: unset;
+    }
+    img{
+        vertical-align: middle;
+        margin-left: 0.5rem;
+    }
+}

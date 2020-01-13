@@ -1,0 +1,19 @@
+.myContainer {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  @include media(1200px) {
+    @include size($mwidth: 1170px);
+    margin: auto;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+
+.headerShow {
+  top: 0 !important;
+}
+
+.scrollOff {
+  overflow-y: hidden;
+}
+

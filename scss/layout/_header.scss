@@ -1,0 +1,65 @@
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  max-height: 65px;
+  padding-bottom: 1rem;
+  background-color: #f7f8fe;
+  padding-top: 1rem;
+  z-index: 50;
+  > .myContainer {
+    @include media(700px) {
+      @include flex($jstfyC: space-between, $alignI: center);
+    }
+  }
+  .logo {
+    @include size($width: 6.8rem, $height: 1.8rem);
+    background-color: #c4c4c4;
+    display: inline-block;
+  }
+}
+
+.header_nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -150vh;
+  text-align: center;
+  padding: 70px;
+  background: #f7f8fe;
+  height: 100vh;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  a {
+    padding: 10px;
+    margin: 1rem;
+    display: block;
+  }
+  @include media(768px) {
+    position: unset;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    font-size: 15px;
+    text-align: unset;
+    padding: 0;
+    background: none;
+    height: unset;
+    > nav {
+      margin-right: 2rem;
+      > a {
+        display: inline;
+        padding: 0;
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+      > a:not(:last-child) {
+        margin: 0 1.9rem 0 0;
+      }
+    }
+    svg {
+      margin-left: 5px;
+    }
+  }
+}

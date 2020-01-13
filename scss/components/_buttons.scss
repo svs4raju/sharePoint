@@ -1,0 +1,41 @@
+.btnn {
+  outline: none;
+  border: none;
+  background: none;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 16px;
+  &:hover {
+    filter: brightness(80%);
+  }
+}
+.header_resp-btn {
+  position: absolute;
+  background-color: $primaryColor;
+  padding: 0.6rem 0.8rem;
+  color: white;
+  border-radius: 1rem;
+  right: 2rem;
+  top: 1rem;
+  letter-spacing: 1.1px;
+  z-index: 100;
+  font-size: 0.7rem;
+  @include media(768px) {
+    display: none;
+  }
+}
+
+.header_nav-btn {
+  padding: 0.5rem 1rem;
+  color: #18b757;
+  background-color: #d1f1dd;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+.connect-btn {
+  background-color: #18b757;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+}
